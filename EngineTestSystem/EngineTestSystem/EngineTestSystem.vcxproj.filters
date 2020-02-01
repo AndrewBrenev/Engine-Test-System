@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\testSystem">
+      <UniqueIdentifier>{fb28b306-a508-4c4d-a7b0-a15d264cf702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engines">
+      <UniqueIdentifier>{564e7810-ce06-463b-9f35-6b2fb5e020bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engines">
+      <UniqueIdentifier>{62994da0-4fb7-4b6a-97b1-83a8d631e6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\testSystem">
+      <UniqueIdentifier>{22ee907a-1972-4ff8-8322-85b3a4a771ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSystem\EngineOverheatTestSystem.cpp">
+      <Filter>Source Files\testSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\InternalCombustionEngine.cpp">
+      <Filter>Source Files\engines</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\EngineInterface.h">
+      <Filter>Header Files\engines</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\InternalCombustionEngine.h">
+      <Filter>Header Files\engines</Filter>
+    </ClInclude>
+    <ClInclude Include="TestSystem\EngineOverheatTestSystem.h">
+      <Filter>Header Files\testSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="TestSystem\EngineTestSystemInterface.h">
+      <Filter>Header Files\testSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICE.config">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
